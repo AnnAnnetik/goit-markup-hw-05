@@ -132,8 +132,8 @@ img {
   margin: 0 auto;
 }
 
-.main-container {
-}
+
+
 h1 {
   max-width: 496px;
   display: block;
@@ -149,8 +149,8 @@ h1 {
   letter-spacing: 0.02em;
   margin-bottom: 48px;
 }
-.main-subtitle {
-}
+
+
 .main-btn {
   color: var(--WHITE, #fff);
   font-size: 16px;
@@ -344,8 +344,8 @@ h1 {
   letter-spacing: 0.02em;
 }
 
-.portfolio-cover-text {
-}
+
+
 .footer {
   padding: 100px 0;
   background-color: #2e2f42;
@@ -513,5 +513,33 @@ color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 font-size: 12px;
 line-height: 1.16px;
 letter-spacing: 0.04em;
-
 }
+.check-text{
+  display: flex;
+  align-items: center;
+  
+  color: var(--LIGHT-SLATE, #8E8F99);     
+    font-size: 12px;    
+    line-height: 1.17px;    
+    letter-spacing: 0.04em;
+}
+.check-text a{
+  color: var(--IRIS, #4D5AE5);
+  line-height: 1.33em;
+  text-decoration-line: underline;
+}
+.check-text-box{
+  display: block;
+  width: 16px;
+  height: 16px;
+  stroke-width: 1px;
+    stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    margin-right: 8px;     
+    fill: transparent;
+  }
+
+   .modal-check:checked + .check-text > .check-text-box{
+  fill: var(--OCEAN, #404BBF);
+    stroke-width: 1px;
+    stroke: var(--OCEAN, #404BBF);
+   }

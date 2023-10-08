@@ -435,19 +435,24 @@ h1 {
     border-radius: 4px;
       border: 1px solid var(--WHITE, #FFF);
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-      background-color: transparent;}
+      background-color: transparent;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
     
 .footer-input::placeholder{
 color: var(--WHITE, #FFF); 
   font-size: 12px; 
   line-height: 2px; 
   letter-spacing: 0.02px;
+  padding-left: 16px;
+  left: 16px;
 
 }
-.footer-input:focus{
-  border-color: #4d5ae5;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.footer-input:focus, .footer-input:hover{
+  border-color: #4d5ae5;}
+  
+
 .footer-form-btn{
   display: inline-flex;
     padding: 8px 24px;
@@ -455,16 +460,16 @@ color: var(--WHITE, #FFF);
     align-items: center;
     gap: 16px;
     border-radius: 4px;
-      background-color: var(--IRIS, #4D5AE5);
-      color: var(--WHITE, #FFF);
-        text-align: center; 
-        font-size: 16px;       
-        font-weight: 500;
-        line-height: 1.5px;        
-        letter-spacing: 0.04em;
-        margin: 0 auto;
-          border: none;
-          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--IRIS, #4D5AE5);
+    color: var(--WHITE, #FFF);
+    text-align: center; 
+    font-size: 16px;       
+    font-weight: 500;
+    line-height: 1.5px;        
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-btn:hover, .footer-form-btn:focus{
   background-color: var(--OCEAN, #404bbf);
@@ -501,9 +506,9 @@ color: var(--WHITE, #FFF);
   padding: 24px;
 }
 .modal-btn {
-  border-radius: 4px;
-  background-color: transparent;
-  border: none;
+  border-radius: 50%;
+  background-color: #E7E9FC;
+  border: 4px;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -511,7 +516,7 @@ color: var(--WHITE, #FFF);
   height: 24px;
   padding: 0;
 }
-.modal-btn-icon:focus {
+.modal-btn:focus, .modal-btn:hover {
   background-color: #404bbf;
 }
 .modal-text {
@@ -585,13 +590,13 @@ letter-spacing: 0.04em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
   
 .check-text{
-  display: flex;
-  align-items: center;
-  
-  color: var(--LIGHT-SLATE, #8E8F99);     
+    color: var(--LIGHT-SLATE, #8E8F99);     
     font-size: 12px;    
     line-height: 1.17px;    
     letter-spacing: 0.04em;
+    display: flex;
+      align-items: center;
+      position: relative;
 }
 .check-text a{
   color: var(--IRIS, #4D5AE5);
@@ -602,14 +607,20 @@ letter-spacing: 0.04em;
   display: block;
   width: 16px;
   height: 16px;
-  stroke-width: 1px;
-    stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
-    margin-right: 8px;     
-    fill: transparent;
+  border-radius: 1px;
+   border: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    margin-right: 8px;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: transparent;  
   }
+  
+    
 
-   .modal-check:checked + .check-text > .check-text-box{
-  fill: var(--OCEAN, #404BBF);
-    stroke-width: 1px;
-    stroke: var(--OCEAN, #404BBF);
-   }
+  .modal-check:checked + .check-text > .check-text-box{
+  background-color: #404BBF;
+    border: none;
+    fill: #ffffff;
+  
+  }

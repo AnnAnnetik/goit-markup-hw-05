@@ -282,7 +282,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
+  
   fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -410,7 +410,7 @@ h1 {
 
 .footer-form{
   display: block;
-   margin-left: 80px;
+  margin-left: 80px;
 }
 .form-div{
   display: flex;
@@ -425,7 +425,7 @@ h1 {
         font-size: 16px;    
     font-weight: 500;
     line-height: 1.5px;   
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; 
 }
 
 .footer-input{
@@ -457,8 +457,7 @@ color: var(--WHITE, #FFF);
     border-radius: 4px;
       background-color: var(--IRIS, #4D5AE5);
       color: var(--WHITE, #FFF);
-        text-align: center;   
-           
+        text-align: center; 
         font-size: 16px;       
         font-weight: 500;
         line-height: 1.5px;        

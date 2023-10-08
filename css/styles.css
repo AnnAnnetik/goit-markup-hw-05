@@ -630,8 +630,7 @@ color: rgba(46, 47, 66, 0.4);
     font-size: 12px;    
     line-height: 1.17;    
     letter-spacing: 0.04em;
-    display: flex;
-      align-items: center;
+    
       position: relative;
 }
 .check-text a{
